@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+#main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+
+
+#background-image-container {
+  width: 40vw;
+  background-image: url(background-images/chizuru-mizuhara.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#background-image-container > .logo {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  position: relative;
+  top: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+#background-image-container > .logo > img {
+  width: 350px;
+}
