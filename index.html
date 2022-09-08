@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
   <title>Sign up Form</title>
 </head>
 <body>
@@ -76,17 +77,23 @@
 
               <div class="flex-column">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                <input type="password" id="confirm-password" 
+                       name="confirm-password" placeholder="Confirm Password" 
+                       onkeyup="validatePassword()" required>
               </div>
 
             </div>
+
+            <span id="password-error-alert"></span>
 
           </div>
           
         </div>
 
         <div class="button-container signup-padding-left">
-          <button type="submit">Create Account!</button>
+          <button type="submit" 
+                  id="create-account-button"
+                  onclick="wrongPasswordAlert()">Create Account!</button>
         </div>
         
       </form>
