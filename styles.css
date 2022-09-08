@@ -70,6 +70,7 @@ body {
   flex-direction: column;
   row-gap: 20px;
   padding-bottom: 30px;
+  padding-right: 10px;
 }
 
 /* ~~ PARENT CLASS ~~ */
@@ -97,7 +98,7 @@ form > div > div > h4 {
 
 input {
   border: 3.5px solid #000;
-  border-radius: 8px;
+  border-radius: 5px;
   width: 220px;
   height: 30px;
   padding-left: 5px;
@@ -132,6 +133,21 @@ button:hover {
 
 button:active {
   transform: scale(1);
+}
+
+
+.login {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.login > p > a {
+  text-decoration: none;
+  color: blue;
+}
+
+.login > p > a:hover {
+  text-decoration: underline;
 }
 
 
