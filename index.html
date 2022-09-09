@@ -34,8 +34,8 @@
       </div>
     
 
-      <form "http://httpbin.org/post" method="post">
-        <div id="fill-up-form" class="signup-padding-left">
+      <form "#" method="post">
+        <div id="fill-up-form" class="signup-padding-left" onkeyup="activateAndDisableButton()">
 
           <div>
             <h4>Let's do this!</h4>
@@ -47,12 +47,16 @@
 
               <div class="flex-column">
                 <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                <input type="text" id="first-name" 
+                       name="first-name" placeholder="John" 
+                       required>
               </div>
 
               <div class="flex-column">
                 <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+                <input type="text" id="last-name" 
+                       name="last-name" placeholder="Doe" 
+                       required>
               </div>
             </div>
 
@@ -60,19 +64,25 @@
             <div class="two-columns">
               <div class="flex-column">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+                <input type="email" id="email" 
+                       name="email" placeholder="johndoe@example.com" 
+                       required>
               </div>
               
               <div class="flex-column">  
                 <label for="phone-number">Phone Number</label>
-                <input type="tel" id="phone-number" name="phone-number" placeholder="09191234567" pattern="^(09|\+639)\d{9}$" required>
+                <input type="tel" id="phone-number" 
+                       name="phone-number" placeholder="09191234567" 
+                       pattern="^(09|\+639)\d{9}$" required>
               </div>
             </div>
 
             <div class="two-columns">
               <div class="flex-column">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                <input type="password" id="password" 
+                       name="password" placeholder="Enter Password" 
+                       onkeyup="validatePassword()" required>
               </div>
 
               <div class="flex-column">
@@ -82,18 +92,18 @@
                        onkeyup="validatePassword()" required>
               </div>
 
+
             </div>
 
             <span id="password-error-alert"></span>
 
-          </div>
+          </div> 
           
         </div>
 
         <div class="button-container signup-padding-left">
-          <button type="submit" 
-                  id="create-account-button"
-                  onclick="wrongPasswordAlert()">Create Account!</button>
+          <button type="button" id="create-account-button"
+                  onclick="location.href='welcome-user.html'">Create Button</button>
         </div>
         
       </form>

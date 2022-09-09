@@ -89,11 +89,15 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  padding-bottom: 20px;
 }
+
+
 
 form > div > div > h4 {
   font-size: 1.5rem;
   padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 input {
@@ -117,24 +121,13 @@ input:valid {
 .button-container > button {
   border-radius: 8px;
   color: white;
-  background-color: hsl(193, 100%, 32%);
-  margin: 30px 0;
+  background-color: hsl(193, 100%, 8%);
+  margin: 20px 0;
   padding: 10px 20px;
   font-size: 1.2rem;
   font-weight: bold;
+  border: none;
 }
-
-button:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  background-color: hsl(193, 100%, 52%);
-  color: black;
-}
-
-button:active {
-  transform: scale(1);
-}
-
 
 .login {
   font-family: 'Poppins', sans-serif;
@@ -150,4 +143,7 @@ button:active {
   text-decoration: underline;
 }
 
-
+#password-error-alert {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
