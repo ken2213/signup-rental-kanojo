@@ -110,14 +110,6 @@ input {
 }
 
 
-input:invalid {
-  border-color: red;
-}
-
-input:valid {
-  border-color: green;
-}
-
 .button-container > button {
   border-radius: 8px;
   color: white;

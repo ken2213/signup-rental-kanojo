@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <main id="main-container">
+  <main id="main-container" onmouseover="activateAndDisableButton()">
     
     <!-- LEFT BACKGROUND IMAGE AND LOGO -->
     <div id="background-image-container">
@@ -49,14 +49,14 @@
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name" 
                        name="first-name" placeholder="John" 
-                       required>
+                       onkeyup="changeFirstNameBorderColor()" required>
               </div>
 
               <div class="flex-column">
                 <label for="last-name">Last Name</label>
                 <input type="text" id="last-name" 
                        name="last-name" placeholder="Doe" 
-                       required>
+                       onkeyup="changeLastNameBorderColor()" required>
               </div>
             </div>
 
@@ -66,14 +66,15 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" 
                        name="email" placeholder="johndoe@example.com" 
-                       required>
+                       onkeyup="changeEmailBorderColor()" required>
               </div>
               
               <div class="flex-column">  
                 <label for="phone-number">Phone Number</label>
                 <input type="tel" id="phone-number" 
                        name="phone-number" placeholder="09191234567" 
-                       pattern="^(09|\+639)\d{9}$" required>
+                       pattern="^(09|\+639)\d{9}$"
+                       onkeyup="changePhoneNumberBorderColor()" required>
               </div>
             </div>
 
